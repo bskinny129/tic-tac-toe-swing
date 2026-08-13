@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Play Tic Tac Toe",
+      "request": "launch",
+      "mainClass": "TicTacToeFinished",
+      "env": {
+        "DISPLAY": ":1"
+      }
+    }
+  ]
+}
