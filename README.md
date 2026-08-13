@@ -16,11 +16,15 @@ Codespaces.
    **Create codespace on main**.
 3. Wait a minute or two while it builds. You'll end up looking at VS Code in
    your browser.
-4. In the terminal at the bottom, type:
+4. Start the game. Either way works:
 
-   ```bash
-   ./run.sh
-   ```
+   - **Easiest:** click the Run and Debug icon in the left sidebar (the little
+     bug with a play button), then press the green **Play Tic Tac Toe** button.
+   - **Or** type this in the terminal at the bottom:
+
+     ```bash
+     ./run.sh
+     ```
 
 5. A notification will pop up about port **6080** — click **Open in Browser**.
    (If you miss it, go to the **PORTS** tab at the bottom and click the globe
