@@ -1,10 +1,13 @@
 {
   "name": "Java Swing (GUI in the browser)",
-  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": "false",
+      "installGradle": "false"
+    },
     "ghcr.io/devcontainers/features/desktop-lite:1": {
-      "version": "latest",
-      "noVncVersion": "1.2.0",
       "password": "vscode",
       "webPort": "6080",
       "vncPort": "5901"
@@ -29,5 +32,5 @@
   "remoteEnv": {
     "DISPLAY": ":1"
   },
-  "postCreateCommand": "chmod +x run.sh || true"
+  "postCreateCommand": "chmod +x run.sh"
 }
