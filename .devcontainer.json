@@ -1,0 +1,33 @@
+{
+  "name": "Java Swing (GUI in the browser)",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest",
+      "noVncVersion": "1.2.0",
+      "password": "vscode",
+      "webPort": "6080",
+      "vncPort": "5901"
+    }
+  },
+  "forwardPorts": [
+    6080
+  ],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop (open this to see the game window)",
+      "onAutoForward": "openBrowserOnce"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "DISPLAY": ":1"
+  },
+  "postCreateCommand": "chmod +x run.sh || true"
+}
